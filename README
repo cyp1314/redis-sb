@@ -1,0 +1,7 @@
+Redis 哨兵模式
+
+```
+nohup ./redis-server --protected-mode no --port 6380 >> /data/redis/log/6380.log 2>&1 &
+nohup ./redis-server --protected-mode no --port 6381 >> /data/redis/log/6381.log 2>&1 &
+nohup ./redis-server --protected-mode no --port 6382 >> /data/redis/log/6382.log 2>&1 &
+```

@@ -1,0 +1,16 @@
+spring:
+  redis:
+#    host: 101.200.84.29 # ?????
+#    port: 6380
+    # password:
+    database: 0
+    sentinel:
+      master: mymaster
+      nodes: 101.200.84.29:26300,101.200.84.29:26301
+    timeout: 5000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
